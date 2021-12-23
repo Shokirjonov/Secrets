@@ -157,22 +157,49 @@ p .link2{
 }
 
 .box-txt__box{
-    width: 500px;
+    width: 600px;
     height: 170px;
     background-color: #ffffff;
     padding: 30px;
     margin-top: 20px;
     box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 10%);  
-    margin-left: 100px;
+    z-index: 99;
+    position: relative;
 }
 
 .boxes__img{
     width: 600px;
     height: 654px;
-    margin-top: -600px;
+    margin-top: -650px;
     margin-left: 650px;
     background-image: url(images/brat.jpg);
     background-size: cover;
 
 }
 
+.boxes_txt{
+    width: 600px;
+    height: 600px;
+    margin-left: 150px;
+    margin-top: 130px;
+}
+
+p .link3{
+     text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    list-style: none;
+}
+
+.link3::after{
+    content: "";
+    background: #ffffff;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    height: 1px;
+    position: absolute;
+}
+.link3:hover::after{
+    width: 0;
+}
